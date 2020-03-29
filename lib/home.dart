@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:toptenwidget/align.dart';
 import 'package:toptenwidget/clip_r_rect.dart';
+import 'package:toptenwidget/form_bloc.dart';
+import 'package:toptenwidget/form_bloc_dynamic.dart';
 import 'package:toptenwidget/future_builder.dart';
 import 'package:toptenwidget/media_query.dart';
 import 'package:toptenwidget/rich_text.dart';
@@ -256,6 +258,60 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Center(
                 child: Text(
                   "Align",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+      Container(
+        child: GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, FormBlocScreen.id);
+          },
+          child: Card(
+            color: Colors.deepPurpleAccent,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            margin: EdgeInsets.all(7),
+            elevation: 10,
+            child: Container(
+              child: Center(
+                child: Text(
+                  "Forms Blocks",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+      Container(
+        child: GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, FormBlocDynamicScreen.id);
+          },
+          child: Card(
+            color: Colors.deepPurpleAccent,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            margin: EdgeInsets.all(7),
+            elevation: 10,
+            child: Container(
+              child: Center(
+                child: Text(
+                  "Forms Blocks Dynamic",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,

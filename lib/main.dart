@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:toptenwidget/align.dart';
 import 'package:toptenwidget/clip_r_rect.dart';
 import 'package:toptenwidget/flexible.dart';
+import 'package:toptenwidget/form_bloc.dart';
+import 'package:toptenwidget/form_bloc_dynamic.dart';
 import 'package:toptenwidget/future_builder.dart';
 import 'package:toptenwidget/media_query.dart';
 import 'package:toptenwidget/rich_text.dart';
@@ -30,6 +32,8 @@ class MyApp extends StatelessWidget {
         FlexibleScreen.id: (context) => FlexibleScreen(),
         SizedBoxScreen.id: (context) => SizedBoxScreen(),
         AlignScreen.id: (context) => AlignScreen(),
+        FormBlocScreen.id: (context) => FormBlocScreen(),
+        FormBlocDynamicScreen.id: (context) => FormBlocDynamicScreen(),
         FutureBuilderScreen.id: (context) => FutureBuilderScreen(),
       },
     );
